@@ -249,7 +249,7 @@ bool OpenRover::setupRobotParams()
   else if (drive_type_ == (std::string) "4wd")
   {
     ROS_INFO("4wd parameters loaded.");
-    odom_encoder_coef_ = ODOM_ENCODER_COEF_4WD;
+    odom_encoder_coef_ = ODOM_ENCODER_COEF_4WD / 2.025;
     odom_axle_track_ = ODOM_AXLE_TRACK_4WD;
     odom_angular_coef_ = ODOM_ANGULAR_COEF_4WD;
     odom_traction_factor_ = ODOM_TRACTION_FACTOR_4WD;
