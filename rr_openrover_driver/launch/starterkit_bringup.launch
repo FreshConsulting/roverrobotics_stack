@@ -28,11 +28,6 @@
         <remap from="/joy" to="/joystick"/>
     </node>
 
-    <node pkg="sbq_rover_bringup" type="joy_translate.py" name="joy_translate" output="screen">
-        <remap from="/joy" to="/joystick"/>
-        <remap from="/cmd_vel" to="/cmd_vel/joy"/>
-    </node>
-
     <!-- PS4 Ubuntu Driver -->
     <!-- <include file="$(find ds4_driver)/launch/ds4_driver.launch" >
         <arg name="addr" value="" />
